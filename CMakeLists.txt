@@ -3,23 +3,11 @@
 
 cmake_minimum_required(VERSION 3.15)
 
-project(libsteel)
+project(rvx LANGUAGES C)
 
-set(HEADERS
-  ${CMAKE_CURRENT_LIST_DIR}/libsteel/csr.h
-  ${CMAKE_CURRENT_LIST_DIR}/libsteel/globals.h
-  ${CMAKE_CURRENT_LIST_DIR}/libsteel/gpio.h
-  ${CMAKE_CURRENT_LIST_DIR}/libsteel/mtimer.h
-  ${CMAKE_CURRENT_LIST_DIR}/libsteel/spi.h
-  ${CMAKE_CURRENT_LIST_DIR}/libsteel/uart.h
-  ${CMAKE_CURRENT_LIST_DIR}/libsteel.h
-)
+add_library(rvx INTERFACE rvx.h)
 
-add_library(steel STATIC ${HEADERS})
-
-set_target_properties(steel PROPERTIES LINKER_LANGUAGE C)
-
-target_include_directories(steel
-  PUBLIC
-  ${CMAKE_CURRENT_LIST_DIR}
+target_include_directories(rvx
+    INTERFACE
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
 )
