@@ -1,16 +1,12 @@
-// ----------------------------------------------------------------------------
-// Copyright (c) 2020-2024 RISC-V Steel contributors
-//
-// This work is licensed under the MIT License, see LICENSE file for details.
 // SPDX-License-Identifier: MIT
-// ----------------------------------------------------------------------------
+// Copyright (c) 2020-2025 RVX Project Contributors
 
 #ifndef __LIBSTEEL_MTIMER__
 #define __LIBSTEEL_MTIMER__
 
 #include "globals.h"
 
-// Struct providing access to RISC-V Steel MTimer Controller registers
+// Struct providing access to RVX MTimer Controller registers
 typedef struct
 {
   // Control Register (CR). Address offset: 0x00

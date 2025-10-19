@@ -1,16 +1,12 @@
-// ----------------------------------------------------------------------------
-// Copyright (c) 2020-2024 RISC-V Steel contributors
-//
-// This work is licensed under the MIT License, see LICENSE file for details.
 // SPDX-License-Identifier: MIT
-// ----------------------------------------------------------------------------
+// Copyright (c) 2020-2025 RVX Project Contributors
 
 #ifndef __LIBSTEEL_UART__
 #define __LIBSTEEL_UART__
 
 #include "globals.h"
 
-// Struct providing access to RISC-V Steel UART Controller registers
+// Struct providing access to RVX UART Controller registers
 typedef struct
 {
   // Write Data (WDATA) Register. Address offset: 0x00

@@ -1,16 +1,12 @@
-// ----------------------------------------------------------------------------
-// Copyright (c) 2020-2024 RISC-V Steel contributors
-//
-// This work is licensed under the MIT License, see LICENSE file for details.
 // SPDX-License-Identifier: MIT
-// ----------------------------------------------------------------------------
+// Copyright (c) 2020-2025 RVX Project Contributors
 
 #ifndef __LIBSTEEL_GPIO__
 #define __LIBSTEEL_GPIO__
 
 #include "globals.h"
 
-// Struct providing access to RISC-V Steel GPIO Controller registers
+// Struct providing access to RVX GPIO Controller registers
 typedef struct
 {
   // IN (Input) Register. Address offset: 0x00.
